@@ -6,11 +6,11 @@ import { Routes, Route } from 'react-router-dom'
 import About from "./components/nav/AboutWe/About"
 import Detail from "./components/nav/DetailCard/Detail"
 import Form from "./components/form/Form"
-import {useLocation } from "react";
-import {useNavigate} from "react";
+import {useEffect} from "react";
+import { useNavigate, useLocation } from 'react-router-dom'
 
 function App () {
-   const navigate = useNavigate();
+   const navigatee = useNavigate();
   const [characters, setCharacters] = useState([]);
   const location = useLocation();
   const [acces, setAcces] = useState(false);
@@ -18,13 +18,13 @@ function App () {
   const password = "lauty182227";
 
   useEffect(() => {
-   !acces && navigate("/");
+   !acces && navigatee("/");
   },[acces]);
 
   function login(userData){
-   if(userData.username === username && userData.password){
+   if(userData.username === username && userData.password === password){
      setAcces(true);  
-     navigate(/home);
+     navigatee("/home");
    }
   }
 

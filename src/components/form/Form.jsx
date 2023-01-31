@@ -18,10 +18,10 @@ export default function Form(props){
         ...userData,
         [evento.target.name]: evento.target.value,
       })
-      setErrors(validation(
+      setErrors(validation({
         ...userData,
-        [evento.target.name] : evento.target.value,
-      ))
+        [evento.target.name] : evento.target.value
+      }))
     }
 
     const handleSubmit = (e) =>{

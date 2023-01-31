@@ -27,6 +27,7 @@ console.log(character);
 
   return ( 
     <div className="container_listas">
+      <h1>Description Card</h1>
      <ul className="container_li">   
       <div className="idems">
         <li>Name: {character.name}</li>,

@@ -1,8 +1,8 @@
 
-const regexEmail = `(^(?=[^@]{3,8}@)([\w.-][a-zA-Z0-9_]@(?=.{4,12}.[^.]$)[\w-][a-zA-Z0-9].[a-zA-Z][a-zA-Z][a-zA-Z])$)`
-const regexPassword = ;
+const regexEmail = `^(?=[^@]{3,8}@)([\w.-][a-zA-Z0-9_]@(?=.{4,12}.[^.]$)[\w-][a-zA-Z0-9].[a-zA-Z][a-zA-Z][a-zA-Z])$`
+const regexPassword = /[a-zA-Z]/ && /[0-9]/;
 
-export default function validation(userData){
+export function validation(userData){
   let errors= {};
 
   if(!regexEmail.test(userData.username)){
