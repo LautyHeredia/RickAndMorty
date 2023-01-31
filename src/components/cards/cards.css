@@ -1,0 +1,15 @@
+.cards_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 140px;
+    min-height: 100vh;
+}
+
+@media (max-width: 500px) {
+  .cards_container{
+    justify-content: center;
+  }  
+}

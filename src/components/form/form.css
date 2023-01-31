@@ -1,0 +1,64 @@
+.container_Nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  min-width: 360px;
+  max-width: fit-content;
+  border: 1px solid black;
+  background-color: black;
+  border: 1px solid black;
+  padding: 2px 2px 26px 2px;
+  margin-top: 120px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.container_form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 1px;
+  border-radius: 10px;
+  gap: 5px;
+  min-width: 90%;
+  max-height: 30vh;
+  padding-bottom: 0px;
+}
+
+.container_form > label{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: bisque;
+  text-align: center;
+}
+
+.container_form > input {
+  border-radius: 5px;
+  display: flex;
+  background-color: rgb(228, 197, 159);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+  margin: 1px 5px;
+  width: 93%;
+  max-width: 93%;
+}
+
+.container_form > button {
+  width: 70%;
+  text-align: center;
+  background-color: chocolate;
+  border-radius: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: absolute;
+  top: 115px;
+  padding: 3px;
+}
+
+@media (max-widht: 500px) {
+   .container_Nav {
+    max-width: fit-content;
+   }
+}

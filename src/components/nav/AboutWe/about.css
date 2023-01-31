@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container_div {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 78px;
+    gap: 1px;
+}
+
+.container_titleH1{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 3px 3px 1px 3px;
+    padding: 4px; 
+    width: 100%;
+    max-width: 99%;
+    height: min-content;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container_h1{
+    width: fit-content;
+    max-width: fit-content;
+}
+
+.h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(194, 167, 125);
+    width: fit-content;
+    max-width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    border: 5px solid rgb(0, 0, 0);
+    margin: 2px;
+    padding: 1px 3px 4px 3px;
+    border-radius: 10px;
+}
+
+.container_h{
+ display: flex;
+ width: 100%;  
+ max-width: fit-content; 
+ justify-content: flex-start;
+ align-items: flex-start;
+ margin: 2px;
+ margin-left: 10px;
+}
+
+.h2_1{
+  display: flex;
+  text-align: center;
+  background-color: blanchedalmond;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid black;
+  border-radius: 6px;
+  width: fit-content;  
+  max-width: 100%;
+  margin: 2px;
+  padding: 1px;
+  font-size: 20px; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container_informacion {
+    border: 1px solid black;
+    margin: 1px 3px 3px 3px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 6px;
+    flex-direction: column;
+}
+
+.container_parrafo {
+    border: 1 px solid black;
+    margin: 3px;
+}
+
+.container_h3 {
+    padding: 2px;
+    width: 100%;
+    max-width: fit-content;
+    margin-bottom: 5px;
+}
+
+.h3_1 {
+    font-size: 25px;
+}
+
+.container_p {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding: 0px 4px 3px 5px;
+    width: 100%;
+    max-width: fit-content;
+    margin-bottom: 3px;
+}
+
+.p1 {
+    padding-top: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 600px) {
+    .container_div{
+        margin-top: 110px;
+    }
+    .h1 {
+        background-color: rgb(190, 99, 118);
+    }
+
+    .container_h{
+       display: flex;
+       justify-content: flex-start;
+       align-items: flex-start; 
+       margin-left: 1px;
+       max-width: 87%;
+    }
+}
