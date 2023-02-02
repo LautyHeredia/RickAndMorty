@@ -12,7 +12,9 @@
   margin-top: 120px;
   border-radius: 10px;
   position: relative;
+  box-shadow: 10px 10px 30px 10px rgb(0, 255, 119);
 }
+
 
 .container_form{
   display: flex;
@@ -46,6 +48,10 @@
   max-width: 93%;
 }
 
+.container_form > input:hover{
+  scale: 1.09;
+}
+
 .container_form > button {
   width: 70%;
   text-align: center;
@@ -53,8 +59,12 @@
   border-radius: 10px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   position: absolute;
-  top: 115px;
+  top: 124px;
   padding: 3px;
+}
+
+.container_form > button:hover {
+  scale: 1.1;
 }
 
 @media (max-widht: 500px) {

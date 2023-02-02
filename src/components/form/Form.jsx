@@ -36,7 +36,7 @@ export default function Form(props){
                     <input type="text" name="username" value={userData.username} onChange={handleInputChange}/>
                     <p>{errors.username}</p>
                     <label>Password</label>
-                    <input type="text" name="password" value={userData.password} onChange={handleInputChange}/>
+                    <input type="password" name="password" value={userData.password} onChange={handleInputChange}/>
                     <p>{errors.password}</p>
                     <button>Log In</button>
             </form>
