@@ -36,22 +36,22 @@ export function Card(props) {
       <div className="card_container">
         <div className="card2_container"> 
          <div className="contador_container">
-          <Contador className="contador" numero={0}/>
+           <Contador numero={0}/>
          {
-          isFav ? (
-           <button onClick={() => handleFavorite(props)}>⭐</button>
+           isFav ? (
+           <button className="button_fav" onClick={() => handleFavorite(props)}>⭐</button>
           ) : (
-           <button onClick={() => handleFavorite(props)}>🏐</button>
+           <button className="button_fav" onClick={() => handleFavorite(props)}>🏐</button>
           )
-         }
-         <button className="butonClose" onClick={onClose}>X</button>
+        }
          </div>
+         <button className="butonClose" onClick={onClose}>X</button>
          <Link to={`/DetailCard/${id}`}> 
            <h2 className="H2_1">{name}</h2>
+           <img class="img_card" src={image} alt={name} />
+           <h2 className="H2_2">{species}</h2>
+           <h2 className="H2_3">{gender}</h2>
          </Link>
-         <img class="img_card" src={image} alt={name} />
-         <h2 className="H2_2">{species}</h2>
-         <h2 className="H2_3">{gender}</h2>
       </div>
      </div> 
    );

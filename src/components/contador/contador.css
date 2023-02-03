@@ -1,7 +1,6 @@
-/* 
+
 .button_container{
     display: flex;
-    gap: 2px;   
     align-items: flex-start;
 }
 
@@ -21,4 +20,4 @@
 
 .button_container .button:hover{
      scale: 1.15; 
-} */
+}

@@ -116,10 +116,19 @@
 
 .contador_container{     
   position: absolute;
-  width: 100%;
+  width: 10%;
   left: 3px;
   top: 0px;
 } 
+
+.contador_container .button_fav{
+    background-color: black;
+    border-radius: 10px;
+    position: relative;
+    top: 30px;
+    left: 213px;
+    font-size: 14px;
+}
 
 .span_Container > span{
     position: absolute;

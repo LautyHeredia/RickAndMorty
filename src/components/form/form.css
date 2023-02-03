@@ -59,12 +59,25 @@
   border-radius: 10px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   position: absolute;
-  top: 124px;
+  top: 155px;
   padding: 3px;
 }
 
 .container_form > button:hover {
   scale: 1.1;
+}
+
+.textParaUsuarios{
+  margin: 5px;
+}
+
+.div_text{
+  margin: 2px;
+}
+
+.p_text{
+  color: rgb(0, 255, 13, 0.7);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 @media (max-widht: 500px) {

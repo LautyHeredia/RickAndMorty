@@ -14,19 +14,22 @@ function App () {
   const [characters, setCharacters] = useState([]);
   const location = useLocation();
   const [acces, setAcces] = useState(false);
-  const username = "lautaro12heredia@gmail.com";
-  const password = "lauty182227";
 
   useEffect(() => {
    !acces && navigatee("/");
   },[acces]);
 
-  const login = (userData)=>{
-   if(userData.username === username && userData.password === password){
-     setAcces(true);  
+
+  const login = () => {
+     setAcces(true);
      navigatee("/home");
-   }
   }
+  // const login = (userData)=>{
+  //  if(userData.username === username && userData.password === password){
+  //    setAcces(true);  
+  //    navigatee("/home");
+  //  }
+  // }
 
 
   const onSearch = (character) => {
@@ -55,7 +58,7 @@ function App () {
    location.pathname !== "/" && <Nav onSearch={onSearch}/> 
   }  
     <Routes> 
-      <Route path='/' element={<Form login ={login}/>}/>
+      <Route path='/' element={<Form login={login}/>}/> {/*Aca le paso por props a Form el login={login}*/}
        <Route path='/home' element={ <Cards characters={characters} onClose={onClose}/> } />
        <Route path="/DetailCard/:id" element={<Detail />} />
        <Route path='/Favorites' element={<Favorites />} />

@@ -38,8 +38,11 @@ export default function Form(props){
                     <label>Password</label>
                     <input type="password" name="password" value={userData.password} onChange={handleInputChange}/>
                     <p>{errors.password}</p>
-                    <button>Log In</button>
-            </form>
+                   <div className="div_text">
+                    <p className="p_text">Puede acceder con cualquier email y contraseña</p> 
+                    </div> 
+                    <button>Log In</button>            
+            </form> 
         </div>
     )
 }

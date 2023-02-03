@@ -23,8 +23,6 @@ export default function Detail(){
     return setCharacter({});
   }, [id]);
 
-console.log(character);
-
   return ( 
     <div className="container_listas">
       <h1>Description Card</h1>
