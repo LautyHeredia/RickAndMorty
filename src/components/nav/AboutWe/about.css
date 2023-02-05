@@ -1,16 +1,13 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
 .container_div {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     width: 100%;
-    min-height: 100vh;
-    margin-top: 78px;
+    min-height: fit-content;
+    margin-top: 170px;
     gap: 1px;
+    justify-content: center;
+    align-items: center;
 }
 
 .container_titleH1{
@@ -21,7 +18,7 @@
     padding: 4px; 
     width: 100%;
     max-width: 99%;
-    height: min-content;
+    height: max-content;
     justify-content: flex-start;
     align-items: flex-start;
 }
@@ -40,7 +37,7 @@
     max-width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     border: 5px solid rgb(0, 0, 0);
     margin: 2px;
     padding: 1px 3px 4px 3px;
@@ -69,15 +66,14 @@
   max-width: 100%;
   margin: 2px;
   padding: 1px;
-  font-size: 20px; 
+  font-size: 25px; 
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container_informacion {
     border: 1px solid black;
-    margin: 1px 3px 3px 3px;
+    margin: 1px 3px 1px 3px;
     display: flex;
-    flex-wrap: wrap;
     padding: 6px;
     flex-direction: column;
 }
@@ -95,7 +91,7 @@
 }
 
 .h3_1 {
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .container_p {
@@ -105,12 +101,13 @@
     padding: 0px 4px 3px 5px;
     width: 100%;
     max-width: fit-content;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
 }
 
 .p1 {
     padding-top: 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
 }
 
 .containerDelFooter{
@@ -124,7 +121,7 @@
 }
 
 .containerDelFooter > h2 {
-   font-size: 15px;
+   font-size: 25px;
    font-family: Verdana, Geneva, Tahoma, sans-serif; 
    border: 1px solid rgb(255, 255, 255);
    padding: 2px;
@@ -148,6 +145,7 @@
   color: rgb(255, 255, 255);
   border: 2px solid rgb(255, 255, 255); 
   margin: 2px; 
+  font-size: 30px;
   padding: 3px;
   border-radius: 6px;
   background-color: rgba(0, 0, 0, 0.6);
@@ -155,14 +153,13 @@
 
 .containerFooter > a > li:hover{
     scale: 1.1;
+    box-shadow: 1px 2px 20px 1px rgb(255, 38, 0);
+
 }
 
 @media (max-width: 600px) {
-    .container_div{
-        margin-top: 110px;
-    }
     .h1 {
-        background-color: rgb(190, 99, 118);
+        background-color: rgb(115, 201, 212);
     }
 
     .container_h{
@@ -170,6 +167,5 @@
        justify-content: flex-start;
        align-items: flex-start; 
        margin-left: 1px;
-       max-width: 87%;
     }
 }

@@ -11,7 +11,7 @@
   z-index: 100;
   border-bottom: 1px solid #fff;
   flex-wrap: wrap;
-  padding: 10px 0;
+  padding: 10px 3px;
   gap: 15px;
 }
 
@@ -41,9 +41,10 @@
   text-decoration: none;
 }
 
-@media (max-width:900px) {
+@media (max-width:700px) {
    .container_nav{
     justify-content: center;
     align-items: center;
-   } 
+    margin: 3px;
+  } 
 }

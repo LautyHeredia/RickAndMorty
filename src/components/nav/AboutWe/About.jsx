@@ -35,8 +35,7 @@ export default function About() {
                      </p>   
                    </div>
              </div>
-         </div>
-        <div className="containerDelFooter">
+             <div className="containerDelFooter">
           <h2>Mis redes sociales 🔜</h2>
          <footer>
              <ul className="containerFooter">
@@ -52,6 +51,7 @@ export default function About() {
              </ul>
           </footer>        
         </div> 
+         </div>
     </div>
   ) 
 }

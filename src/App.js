@@ -8,6 +8,7 @@ import Form from "./components/form/Form"
 import {useEffect, useState} from "react";
 import { useNavigate, useLocation } from 'react-router-dom'
 import Favorites from './components/fav/Favorites'
+import Nav2 from './components/nav/Nav2'
 
 function App () {
   const navigatee = useNavigate();
@@ -55,8 +56,11 @@ function App () {
   return (
   <div className='App' style={{ padding: '25px' }}>
   {
-   location.pathname !== "/" && <Nav onSearch={onSearch}/> 
+   location.pathname === "/home" && <Nav onSearch={onSearch}/> 
   }  
+  {
+   location.pathname !== "/home" && location.pathname !== "/" && <Nav2/>
+  }
     <Routes> 
       <Route path='/' element={<Form login={login}/>}/> {/*Aca le paso por props a Form el login={login}*/}
        <Route path='/home' element={ <Cards characters={characters} onClose={onClose}/> } />

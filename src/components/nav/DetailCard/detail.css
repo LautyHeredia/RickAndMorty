@@ -7,57 +7,71 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 160px;
+    margin-top: 100px;
+    margin-bottom: 10px;
     flex-wrap: wrap;
-    width: 350px;
-    min-height: 70vh;
-    border-radius: 20px;
+    width: 800px;
+    min-height: 80vh;
     padding: 2px 5px;
-    background-color: rgb(210, 105, 30, 0.9);
-    border: 1px solid black;
 }
 
-.container_listas h1{
+.contenedor_listas_1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 5px;
+  margin: 2px;
+  width: 90%;
+  height: 100%;
+  border-radius: 20px;
+  gap: 25px;
+  background-color: chocolate;
+  box-shadow: 1px 2px 30px 1px rgb(255, 0, 0);
+}
+
+.contenedor_listas_1 > h1{
     color: aliceblue;
-    font-size: 30px;
+    font-size: 60px;
     border: 3px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 3px 5px 3px 5px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 1px 2px 30px 1px rgb(0, 255, 119);
 }
 
 .container_li{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid white;
+    justify-content: flex-start;
+    align-items: start;
+    border: 2px solid white;
     padding: 5px;
-    gap: 10px;
-    max-width: 330px;
+    gap: 20px;
+    border-radius: 20px;
+    min-width: 90%;
     list-style: none;
     background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 1px 2px 30px 1px rgb(255, 251, 0);
+
 }
 
 .idems > li{ 
    color: aliceblue;
+   font-size: 30px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
 }
 
-.image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 290px;
-    max-width: fit-content;
-}
 
-.image > img {
+.container_li > img {
    width: 100%;
-   max-width: fit-content;
-   border-radius: 60px; 
+   max-width: fit-contenSt;
+   border-radius: 70px; 
 }
 
 @media (max-widht: 500px) {
    .container_listas {
-    width: 30%;
-   } 
+    padding: 10px;
+    max-width: 100%;
+  } 
 }

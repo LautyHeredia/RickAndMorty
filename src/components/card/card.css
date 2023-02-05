@@ -9,7 +9,7 @@
     width: fit-content;
     margin: 4px 4px;
     padding: 4px;
-    gap: 3px;
+    gap: 10px;
     border-radius: 20px;
     background-image: linear-gradient(163deg, #00ff75, 0%, #fff200 100%);
     transition: all .2s;
@@ -108,11 +108,7 @@
     /* border: 4px solid black; */
     transition: all 0.3s ease-in-out;
 }
-.img_card:hover{
-    /* transform: translateY(-25px); */
-    box-shadow: 0 0 9.5px 3.5px #eeff00d2;
-    scale: 1;
-}
+
 
 .contador_container{     
   position: absolute;

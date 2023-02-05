@@ -25,20 +25,22 @@ export default function Detail(){
 
   return ( 
     <div className="container_listas">
-      <h1>Description Card</h1>
-     <ul className="container_li">   
-      <div className="idems">
-        <li>Name: {character.name}</li>,
-        <li>Status: {character.status}</li>,
-        <li>Especie: {character.species}</li>,
-        <li>Genero: {character.gender}</li>,
-        <li>Origin: {character.origin?.name}</li>
+     
+      <div className="contenedor_listas_1">
+        <h1>Description Card</h1>
+          <ul className="container_li">   
+             <div className="idems">
+                <li>Name: {character.name}</li>,
+                <li>Status: {character.status}</li>,
+                <li>Especie: {character.species}</li>,
+                <li>Genero: {character.gender}</li>,
+                <li>Origin: {character.origin?.name}</li>
+              </div>
+               
+            <img src={character.image} alt="--" />
+          </ul>
       </div>
-
-      <div className="image">
-       <img src={character.image} alt="--" />
-      </div>
-     </ul>
+    
     </div>
   )
 }
