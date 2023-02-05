@@ -1,7 +1,7 @@
 import "./nav2.css";
 import { Link } from "react-router-dom";
 
-const seccion = ["Home" ,"AboutAs"]
+const seccion = ["Home" ,"AboutUs"]
 
 export default function Nav2 (){
   return (
