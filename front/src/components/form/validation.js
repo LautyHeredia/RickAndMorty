@@ -1,20 +1,19 @@
-
-const regexEmail = `^(?=[^@]{3,8}@)([\w.-][a-zA-Z0-9_]@(?=.{4,12}.[^.]$)[\w-][a-zA-Z0-9].[a-zA-Z][a-zA-Z][a-zA-Z])$`
+const regexEmail = /^[a-zA-Z0-9._%+-]{1,35}@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/
 const regexPassword = /[a-zA-Z]/ && /[0-9]/;
 
-export function validation(userData){
+export function validation({username, password}){
   let errors= {};
 
-  if(!regexEmail.test(userData.username)){
+  if(!regexEmail.test(username)){
     errors.username = "El usuario debe ser un email";
-  }else if(!userData.username){
+  }else if(!username){
     errors.username = "Eln nombre de usuario no puede estar vacio";
-  }else if(userData.username.length > 35){
+  }else if(username.length > 35){
     errors.username = "El nombre de usuario no puede tener mas de 35 caracteres"
   }
-  else if(!regexPassword.test(userData.regexPassword)){
+  else if(!regexPassword.test(regexPassword)){
     errors.password = "Debe tener al menos un numero";
-  }else if(userData.password.length< 6 && userData.password.length>10){
+  }else if(password.length< 6 && password.length>10){
     errors.password = "La contraseña debe tener una longitud entre 6 y 10 caracteres"
   }
   return errors;

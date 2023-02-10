@@ -3,7 +3,7 @@ import SearchBar from '../search/SearchBar'
 import {Link} from "react-router-dom"; 
 
 
-const prop = ["Home", "Favorites", "AboutUs"]
+const prop = ["Home", "Favorites", "AboutUs", "LogOut"]
 
 export default function Nav(props){  
     return (
@@ -13,7 +13,8 @@ export default function Nav(props){
            <li><Link to={"/home"}>{prop[0]}</Link></li>
            <li><Link to={"/Favorites"}>{prop[1]}</Link></li>
            <li><Link to={"/AboutWe"}>{prop[2]}</Link></li>
-         </ul>
-        </nav>
+           <li><Link to={"/"}>{prop[3]}</Link></li>  
+        </ul>
+      </nav>
     )
 }

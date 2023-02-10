@@ -19,7 +19,9 @@ export function Favorites({myFavorites}){
 
  return (
     <div className="container_fav"> 
-     <div className="container_select">
+    <div className="container_select">
+      <h1>Ordenar por :</h1>
+     <div className="container_select1">
           <select className="select_1" onChange={handleClick}>
               <option value="Ascendiente">Ascendiente</option>
               <option value="Descendiente">Descendiente</option>
@@ -30,13 +32,12 @@ export function Favorites({myFavorites}){
                <option value="Genderless">Genderless</option>
                <option value="unknown">unknow</option>
           </select>
-
-       </div>,
-
-       {
+       </div>
+    </div>
+       <div className="container_cardd">
+          {
             myFavorites.map((element, index) => {
              return ( 
-             <div>
               <Card 
                 key={index}
                 id={element.id}
@@ -45,18 +46,10 @@ export function Favorites({myFavorites}){
                 gender={element.gender} 
                 image = {element.image} 
                 onClose={() => element.onClose(element.id)} />
-             </div>
-              // <div>
-              //  <h3>{elemento.id}</h3>,
-              //  <h3>{elemento.name}</h3>,
-              //  <h3>{elemento.species}</h3>,
-              //  <h3>{elemento.gender}</h3>,
-              //  <h3> <img src={elemento.image} alt={elemento.name}></img></h3>,
-              //  <h3>{elemento.onClose}</h3>,
-              // </div>
-             )
-             })
-          }
+                )
+              })
+            }
+        </div>
     </div>
   )
 }

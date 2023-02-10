@@ -19,8 +19,8 @@ export default function Form(props){
         [evento.target.name]: evento.target.value,
       })
       setErrors(validation({
-        ...userData,
-        [evento.target.name] : evento.target.value
+        ...errors,
+        [errors.target.name]: errors.target.value
       }))
     }
 

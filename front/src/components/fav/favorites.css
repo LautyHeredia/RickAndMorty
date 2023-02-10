@@ -1,5 +1,6 @@
 .container_fav {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -7,31 +8,50 @@
     margin: 1px 4px 1px 4px;
     padding: 4px;
     gap: 10px;
-    margin-top: 120px;
+    margin-top:90px;
     border-radius: 20px;
-    flex-direction: column;
 }
 
 .container_select{
+    background-color: rgb(245, 245, 220, 0.6);
+    border: 2px solid black;
+    padding: 5px;
+    gap: 5px;
+}
+
+.container_select > h1 {
+   font-size: 15px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif; 
+   margin: 2px;
+   border: 2px solid black;
+   text-align: center;
+}
+
+.container_select1{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    border-radius: 10px;
+    gap: 5px;
+    border: 2px solid black;
+    padding: 3px;
 }
 
 .select_1{
    font-size: 15px;
-   background-color: rgb(238, 135, 0);
+   background-color: rgb(219, 126, 4);
    border-radius: 10px;
+   border: 3px solid black;
    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+   text-align: center;
 }
 
 .select_2{
     font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(238, 135, 0);
+    border: 3px solid black;
     border-radius: 10px;
+    text-align: center;
 }
 
 .select_1 > option {
@@ -42,3 +62,8 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.container_cardd{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}

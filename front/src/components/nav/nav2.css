@@ -6,7 +6,7 @@
     background-color: rgb(96 64 41 / 61%);
     backdrop-filter: blur(5px);
     position: fixed;
-    min-height: 75px;
+    min-height: 65px;
     top: 0;
     z-index: 100;
     border-bottom: 1px solid #fff;
