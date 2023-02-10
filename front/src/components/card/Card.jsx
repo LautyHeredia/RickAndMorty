@@ -10,7 +10,7 @@ export function Card(props) {
  const { id, name, species, gender, image, onClose} = props;
   const [isFav, setFav] = useState(false);
   const dispatch = useDispatch();
-  const {myFavorites} = useSelector ((state) => {return state} )
+  const {myFavorites} = useSelector ((state) => {return state} );
 
   useEffect(() => {
     myFavorites.forEach((fav) => {
