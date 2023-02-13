@@ -1,7 +1,7 @@
 const http = require("http");
 // const characters = require("./utils/data.js")
 const getCharById = require("../src/controllers/getCharById")
-const getCharDetail = require("../src/controllers/getCharDetail")
+const getCharDetail = require("../src/controllers/getCharDetail");
 
 
 // http.createServer(function(req, res){
