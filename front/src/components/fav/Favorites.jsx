@@ -1,20 +1,30 @@
-import {connect} from "react-redux"
+import {useSelector} from "react-redux"
 import "./favorites.css"
 import Card from "../card/Card"
 import { orderCards, filterCards } from "../../redux/actions"
 import { useDispatch } from "react-redux"
+import React, { useEffect, useState } from "react"
 
-export function Favorites({myFavorites}){
+export default function Favorites(){
 
   const dispatch = useDispatch();
 
+  const [favourites, setFavourites] = useState([])
+  const [order, setOrder] = useState("")
+  const fav = useSelector(state => state.myFavorites)
+  
+  useEffect(()=>{
+    setFavourites(fav)
+  },[fav])
+
   function handleClick(evento){
-    console.log(evento.target.value + "ascendiente")
     dispatch(orderCards(evento.target.value));
+    setOrder(`Order ${evento.target.value}`)
   }
 
   function handleFilter(evento){
     dispatch(filterCards(evento.target.value));
+
   }
 
  return (
@@ -27,6 +37,7 @@ export function Favorites({myFavorites}){
               <option value="Descendiente">Descendiente</option>
           </select>
           <select className="select_2"  onChange={handleFilter}>
+               <option value="all">all</option>
                <option value="Male">Male</option>
                <option value="Female">Female</option>
                <option value="Genderless">Genderless</option>
@@ -36,7 +47,7 @@ export function Favorites({myFavorites}){
     </div>
        <div className="container_cardd">
           {
-            myFavorites.map((element, index) => {
+            favourites?.map((element, index) => {
              return ( 
               <Card 
                 key={index}
@@ -53,11 +64,3 @@ export function Favorites({myFavorites}){
     </div>
   )
 }
-
-export function mapStateToProps(state){
-    return {
-      myFavorites: state.myFavorites,
-    }
-}
-
-export default connect(mapStateToProps, null)(Favorites);

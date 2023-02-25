@@ -1,7 +1,7 @@
-import "./card.css"
+import {addFavorites, deleteFavorites} from "../../redux/actions"
 import Contador from "../contador/Contador.jsx"
 import { Link } from "react-router-dom";
-import {addFavorites, deleteFavorites} from "../../redux/actions"
+import "./card.css"
 // import { connect } from "react-redux";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -10,7 +10,7 @@ export function Card(props) {
  const { id, name, species, gender, image, onClose} = props;
   const [isFav, setFav] = useState(false);
   const dispatch = useDispatch();
-  const {myFavorites} = useSelector ((state) => {return state} );
+  const myFavorites = useSelector((state) => state.myFavorites);
 
   useEffect(() => {
     myFavorites.forEach((fav) => {
@@ -57,22 +57,4 @@ export function Card(props) {
    );
 }
 
-// export function mapDispatchToProps(dispatch){
-//   return {
-//     addFavorites: (personaje) => {
-//       dispatch(addFavorites(personaje))
-//     },
-//     deleteFavorites: (id) => {
-//       dispatch(deleteFavorites(id))
-//     }
-//   }
-// }
-
-// export function mapStateToProps(state){
-//  return {
-//   myFavorites: state.myFavorites
-//  }
-// }
-
-// export default connect(mapStateToProps,mapDispatchToProps)(Card);
 export default Card;
